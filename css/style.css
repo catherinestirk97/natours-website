@@ -54,6 +54,7 @@ body {
     left:50%;
     /* in relation to itself */
     transform: translate(-50%, -50%);
+    /* because button is an anchor tag, it's treated like text - to center we just use text-align */
     text-align:center;
 }
 
@@ -62,6 +63,7 @@ body {
     text-transform: uppercase;
     /* fixes animation shakiness */
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -116,14 +118,28 @@ body {
     }
 }
 
-.btn {
+.btn:link,
+.btn:visited {
     text-transform: uppercase;
     text-decoration:none;
+    padding:15px 40px;
+    display:inline-block;
+    border-radius:100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    /* subtle box shadow */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 .btn-white {
     background-color: white;
     color: #777;
-    padding:15px 40px;
-    display:inline-block;
 }
