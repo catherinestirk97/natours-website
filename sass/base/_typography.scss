@@ -57,6 +57,10 @@ body {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media only screen and (max-width :600px){
+        width:75vw;
+    }
 }
 
 .paragraph{
@@ -64,5 +68,9 @@ body {
 
     &:not(:last-child){
         margin-bottom: 30px;
+    }
+
+    @media only screen and (max-width :600px){
+        width:75vw;
     }
 }
