@@ -1,0 +1,70 @@
+.composition{
+    position:relative;
+    top:-15rem;
+    left:0;
+
+    &__photo{
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        border-radius: 2px;
+        position: absolute;
+        z-index:1;
+        transition: all 0.2s ;
+        outline-offset:2rem;
+
+        &--p1{
+            @media only screen and (min-width :1000px){
+            left:0;
+            top: -2rem;
+            }
+            margin-left:10%;
+            top: -5rem;
+
+            @media only screen and (max-width :600px){
+                display:none;
+            }
+
+        }
+
+        &--p2{
+            @media only screen and (min-width :1000px){
+            left:25rem;
+            top: 5rem;
+            }
+            margin-left:10%;
+            top: 12.5rem;
+
+            @media only screen and (max-width :600px){
+                display:none;
+            }
+        }
+
+        &--p3{
+            @media only screen and (min-width :1000px){
+            left:12rem;
+            top: 15rem;
+            }
+            margin-left:10%;
+            top:30rem;
+
+            @media only screen and (max-width :600px){
+                display:none;
+            }
+        }
+
+        &:hover{
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-0.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+            z-index:10;
+        }
+
+    }
+
+    //when the photos are hovered, choose the photos which aren't being hovered on, and shrink those
+    &:hover &__photo:not(:hover){
+        transform:scale(0.95);
+    }
+
+    
+}
