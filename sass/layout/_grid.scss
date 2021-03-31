@@ -1,0 +1,52 @@
+.flex-container{
+    max-width: 114rem;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between ;
+    align-items: center;
+
+    .col-1-of-2{
+        margin-top:20px;
+        padding: 20px;
+        background-color: pink;
+        width: 48%;
+    }
+
+    .col-1-of-3{
+        margin-top:20px;
+        padding: 20px;
+        background-color: aqua;
+        width: 32%;
+    }
+    
+    .col-2-of-3{
+        margin-top:20px;
+        padding: 20px;
+        background-color: green;
+        width: 66%;
+    }
+
+    .col-1-of-4 {
+        margin-top:20px;
+        padding: 20px;
+        background-color: orange;
+        width: 23%;
+    }
+    
+    .col-2-of-4 {
+        margin-top:20px;
+        padding: 20px;
+        background-color: goldenrod;
+        width: 46%;
+    }
+
+    
+    .col-3-of-4 {
+        margin-top:20px;
+        padding: 20px;
+        background-color: blueviolet;
+        width: 69%;
+    }
+}
+
+
