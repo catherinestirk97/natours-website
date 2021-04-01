@@ -54,4 +54,20 @@
         transform: translateY(-4rem);
     }
 
+
+    &__radio-group{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    &__radio-label{
+        margin-right:7rem;
+        font-size: $default-font-size;
+    }
+
+    &__radio-input{
+
+    }
+
 }
