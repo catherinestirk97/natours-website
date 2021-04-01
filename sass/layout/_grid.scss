@@ -5,6 +5,10 @@
     justify-content: space-between ;
     align-items: center;
 
+    &__story{
+        margin-bottom:100px;
+    }
+
     .col-1-of-2{
         padding: 20px;
         width: 48%;
