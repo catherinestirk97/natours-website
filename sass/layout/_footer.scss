@@ -2,6 +2,9 @@
     background-color: $color-grey-dark;
     height:60vh;
 
+    @include respond(tab-land){
+        height:40vh;
+    }
     
     &__flex-container{
         display:flex;
@@ -26,6 +29,12 @@
 
     &__text{
        margin-top:6rem;
+    }
+
+    &__navigation__item{
+        @include respond(tab-land){
+            margin:1rem;
+        }
     }
 
     &__navigation__item > *{
