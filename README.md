@@ -9,3 +9,4 @@ What was learned from this project:
 - Popups
 - Design ideas like videos for backgrounds and clip=path
 
+The live link for this project can be found here: https://catherinestirk97.github.io/natours-website/
