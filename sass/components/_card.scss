@@ -176,19 +176,19 @@
             // FRONT SIDE STYLING
             &__cta {
                 transform: translate(0);
-                padding: 7rem 4rem 4rem 4rem;
+                padding: 5rem 4rem 4rem 4rem;
             }
 
-            &__price-box {
-                margin-bottom: 3rem;
-            }
+            // &__price-box {
+            //     margin-bottom: 3rem;
+            // }
 
             &__price-value {
                 font-size: 4rem;
             }
 
             .btn--white:last-child{
-                margin-bottom: 8rem;
+                margin-bottom: 6rem;
             }
     }
 
