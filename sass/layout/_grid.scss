@@ -9,6 +9,17 @@
     justify-content: space-between ;
     align-items: center;
 
+    @include respond(tab-port){
+        width:100% !important;
+        margin-right: 0;
+    }
+
+    @include respond(tab-port){
+        flex-direction:column;
+        margin: 2rem 0;
+    }
+
+
     &__story{
         margin-bottom:100px;
     }
@@ -16,10 +27,17 @@
     .col-1-of-2{
         padding: 20px;
         width: 48%;
+
+        @include respond(tab-port){
+            width:90% !important;
+        }
     }
 
     .col-1-of-3{
         width: 32%;
+        @include respond(tab-port){
+            width:90% !important;
+        }
     }
     
     .col-2-of-3{
@@ -31,6 +49,9 @@
 
     .col-1-of-4 {
         width: 23%;
+        @include respond(tab-port){
+            width:90% !important;
+        }
     }
     
     .col-2-of-4 {
