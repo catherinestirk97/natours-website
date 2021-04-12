@@ -32,6 +32,10 @@
         /* because button is an anchor tag, it's treated like text - to center we just use text-align */
         text-align:center;
     }
+
+    @include respond(tab-land){
+        clip-path:polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
+    }
    
 }
 
