@@ -9,10 +9,21 @@
     display:flex;
     transform:skewX(-12deg);
 
+    @include respond(phone){
+        transform:skewX(0);
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
 
     & > * {
         transform:skewX(12deg);
+
+        @include respond(phone){
+            transform:skewX(0);
+        }
     }
+
 
     &__shape{
         width:15rem;
@@ -53,12 +64,12 @@
 
     &__text{
         @include respond(phone){
-            width:50%;
-            margin-left:3rem;
+            width:100%;
          }
 
          h3{
             @include respond(phone){
+                margin-top:3rem;
                 width:100%;
                 text-align: center;
              }
