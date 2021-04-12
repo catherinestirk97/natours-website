@@ -4,8 +4,9 @@
     //20 = polygon takes up 75vh of 95vh, so 95-75
     margin-top: -20vh;
     @include respond(tab-port){
+        padding-top: 8rem;
         padding-bottom:3rem;
-        margin-top:-5vh
+        margin-top:-5vh;
     }
 }
 
