@@ -9,6 +9,7 @@
     display:flex;
     transform:skewX(-12deg);
 
+
     & > * {
         transform:skewX(12deg);
     }
@@ -48,6 +49,20 @@
     &:hover &__image {
         filter:blur(3px);
         transform:translateX(-4rem) scale(1);
+    }
+
+    &__text{
+        @include respond(phone){
+            width:50%;
+            margin-left:3rem;
+         }
+
+         h3{
+            @include respond(phone){
+                width:100%;
+                text-align: center;
+             }
+         }
     }
 }
 
