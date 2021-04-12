@@ -7,6 +7,6 @@ What was learned from this project:
 - Pseudoselectors 
 - Responsive design
 - Popups
-- Design ideas like videos for backgrounds and clip=path
+- Design ideas like videos for backgrounds and clip-path
 
 The live link for this project can be found here: https://catherinestirk97.github.io/natours-website/
