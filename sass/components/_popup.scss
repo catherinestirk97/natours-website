@@ -89,5 +89,23 @@
                 color: $color-primary;
             }
         }
+        
+        @include respond(phone){
+            &__img:last-child{
+                display:none;
+            }
 
+            &__content{
+                overflow:hidden;
+            }
+
+            &__left{
+                display:inline-block;
+                width:100%;
+            }
+            &__right{
+                display:block;
+                width:100%;
+            }
+        }
 }
